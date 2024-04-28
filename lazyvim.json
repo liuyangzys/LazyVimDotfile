@@ -1,0 +1,21 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.coding.yanky",
+    "lazyvim.plugins.extras.editor.navic",
+    "lazyvim.plugins.extras.editor.trouble-v3",
+    "lazyvim.plugins.extras.lang.clangd",
+    "lazyvim.plugins.extras.lang.cmake",
+    "lazyvim.plugins.extras.lang.json",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.lang.yaml",
+    "lazyvim.plugins.extras.lazyrc",
+    "lazyvim.plugins.extras.util.gitui",
+    "lazyvim.plugins.extras.util.project",
+    "lazyvim.plugins.extras.vscode"
+  ],
+  "news": {
+    "NEWS.md": "3415"
+  },
+  "version": 3
+}
