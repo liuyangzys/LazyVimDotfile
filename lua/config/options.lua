@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.o.shell = "pwsh.exe"
+
+vim.o.guifont = "FiraCode Nerd Font:h12"
