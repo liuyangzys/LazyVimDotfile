@@ -1,33 +1,35 @@
 return {
   {
-    "hrsh7th/cmp-cmdline",
-    config = function()
-      local cmp = require("cmp")
-      ---@diagnostic disable-next-line: missing-fields
-      cmp.setup.cmdline(":", {
-        mapping = cmp.mapping.preset.cmdline({
-          ["<C-j>"] = {
-            c = function(fallback)
-              if cmp.visible() then
-                cmp.select_next_item()
-              else
-                fallback()
-              end
-            end,
-          },
-        }),
-        sources = cmp.config.sources({
-          { name = "path" },
-        }, {
-          {
-            name = "cmdline",
-            option = {
-              ignore_cmds = { "Man", "!" },
+    "hrsh7th/nvim-cmp",
+    event = { "CmdlineEnter" },
+    dependencies = {
+      "hrsh7th/cmp-cmdline",
+      config = function()
+        local cmp = require("cmp")
+        ---@diagnostic disable-next-line: missing-fields
+        -- `:` cmdline setup.
+        cmp.setup.cmdline(":", {
+          mapping = cmp.mapping.preset.cmdline(),
+          sources = cmp.config.sources({
+            { name = "path" },
+          }, {
+            {
+              name = "cmdline",
+              option = {
+                ignore_cmds = { "Man", "!" },
+              },
             },
+          }),
+        })
+        -- `/` cmdline setup.
+        cmp.setup.cmdline("/", {
+          mapping = cmp.mapping.preset.cmdline(),
+          sources = {
+            { name = "buffer" },
           },
-        }),
-      })
-    end,
+        })
+      end,
+    },
   },
 
   {
