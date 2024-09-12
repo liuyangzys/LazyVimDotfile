@@ -5,7 +5,6 @@
     "lazyvim.plugins.extras.coding.neogen",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.dial",
-    "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.editor.inc-rename",
     "lazyvim.plugins.extras.editor.overseer",
     "lazyvim.plugins.extras.lang.clangd",
@@ -18,12 +17,13 @@
     "lazyvim.plugins.extras.lsp.none-ls",
     "lazyvim.plugins.extras.ui.edgy",
     "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.gitui",
     "lazyvim.plugins.extras.util.mini-hipatterns",
     "lazyvim.plugins.extras.util.project",
     "lazyvim.plugins.extras.vscode"
   ],
   "news": {
-    "NEWS.md": "6480"
+    "NEWS.md": "6707"
   },
   "version": 6
 }

@@ -12,5 +12,12 @@ vim.api.nvim_create_autocmd("FileType", {
   pattern = { "gitcommit", "markdown" },
   callback = function()
     vim.opt_local.spell = false -- 覆盖默认的 true
+    vim.opt_local.wrap = false -- 覆盖默认的 true
   end,
+})
+
+vim.filetype.add({
+  pattern = {
+    ["SConscript"] = "python",
+  },
 })

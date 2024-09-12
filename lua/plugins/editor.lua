@@ -27,6 +27,13 @@ return {
       end,
     },
   },
+  {
+    "folke/persistence.nvim",
+    -- stylua: ignore
+    keys = {
+      { "<leader>qS", function() require("persistence").select() end,desc = "Select Session" },
+    },
+  },
 
   {
     "tpope/vim-fugitive",
@@ -53,6 +60,9 @@ return {
       "DiffviewClose",
       "DiffviewFileHistory",
       "DiffviewRefresh",
+    },
+    keys = {
+      { "<leader>gf", "<Cmd>DiffviewFileHistory %<CR>", desc = "Git File History" },
     },
     opts = {
       hooks = {

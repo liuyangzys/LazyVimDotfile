@@ -6,4 +6,4 @@
 
 LazyVim.terminal.setup("pwsh")
 
-vim.o.guifont = "FiraCode Nerd Font:h12"
+vim.o.guifont = "FiraCode Nerd Font:h14"
