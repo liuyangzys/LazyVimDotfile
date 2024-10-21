@@ -4,6 +4,8 @@
 
 -- vim.o.shell = "pwsh.exe"
 
-LazyVim.terminal.setup("pwsh")
+if jit.os == "Windows" then
+  LazyVim.terminal.setup("pwsh")
+end
 
 vim.o.guifont = "FiraCode Nerd Font:h14"
