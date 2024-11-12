@@ -27,13 +27,6 @@ return {
       end,
     },
   },
-  {
-    "folke/persistence.nvim",
-    -- stylua: ignore
-    keys = {
-      { "<leader>qS", function() require("persistence").select() end,desc = "Select Session" },
-    },
-  },
 
   {
     "tpope/vim-fugitive",
